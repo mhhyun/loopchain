@@ -15,6 +15,7 @@
 
 from loopchain.baseservice import CommonThread
 from loopchain.blockchain import *
+from enum import Enum
 
 
 class OffType(Enum):

@@ -21,7 +21,7 @@ from enum import Enum
 
 from loopchain import utils as util
 from loopchain.baseservice import ObjectManager
-from loopchain.blockchain import TransactionStatus, TransactionType, Transaction
+from loopchain.blockchain.transaction import TransactionStatus, TransactionType, Transaction
 from loopchain.blockchain.exception import *
 from loopchain.blockchain.score_base import *
 from loopchain import configure as conf

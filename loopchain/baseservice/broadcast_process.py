@@ -22,7 +22,7 @@ from enum import Enum
 
 from loopchain import configure as conf
 from loopchain.baseservice import ManageProcess, StubManager, PeerManager
-from loopchain.blockchain import Transaction
+from loopchain.blockchain.transaction import Transaction
 from loopchain.protos import loopchain_pb2, loopchain_pb2_grpc, message_code
 
 

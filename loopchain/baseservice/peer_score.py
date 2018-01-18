@@ -12,17 +12,21 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 """A module for managing Score"""
-
+import logging
+from loopchain import configure as conf
 import os
 import os.path as osp
 import shutil
 import stat
 import zipfile
 
+
 from git import Repo, Git, GitCmdObjectDB
 from git.repo.fun import is_git_dir
 
 from loopchain.blockchain import *
+from loopchain.blockchain.block import *
+from loopchain.blockchain.transaction import Transaction
 from loopchain.utils import get_valid_filename
 
 logger = logging.getLogger("git")
