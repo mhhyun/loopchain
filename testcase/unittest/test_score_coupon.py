@@ -18,7 +18,8 @@
 
 import sys
 import unittest
-sys.path.insert(0, '/Users/wise/study/theloop/loopchain/score/sample')
+from os.path import dirname, abspath
+sys.path.insert(0, dirname(dirname(dirname(abspath(__file__)))) + '/score/sample')
 from score_coupon import *
 
 
